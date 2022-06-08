@@ -15,8 +15,6 @@ class Solution {
             solve(digits, output, index + 1, mapping, ans);
             output.pop_back();
         }
-        
-        
     }
 public:
     vector<string> letterCombinations(string digits) {
