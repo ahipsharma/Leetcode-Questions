@@ -1,3 +1,4 @@
+class Solution {
 public:
     vector<int> rightSideView(TreeNode* root) {
         vector<int> ans;
@@ -15,7 +16,8 @@ public:
             TreeNode* node = it.first;
             int line = it.second;
             
-            m[line] = node->val;
+            m[line] = node->val; // For Right View
+            // if(m.find(line) == m.end()) m[line] = node->val; For Left View
             
             if(node->left) q.push({node->left, line+1});
             if(node->right) q.push({node->right, line+1});
