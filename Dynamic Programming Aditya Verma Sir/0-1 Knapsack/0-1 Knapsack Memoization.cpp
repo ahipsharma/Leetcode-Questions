@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
-int t[102][1002]
+int t[102][1002];
+memset(t, -1, sizeof(t));
 int Knapsack(int wt[], int val[], int W, int n){
     if(n == 0 || W == 0)
         return 0;
