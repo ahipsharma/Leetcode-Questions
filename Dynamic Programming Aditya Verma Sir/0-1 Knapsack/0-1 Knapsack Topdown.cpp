@@ -17,7 +17,7 @@ int Knapsack(int wt[], int val[], int W, int n){
                 t[i][j] = t[i-1][j];
         }
     }
-    return t[n+1][W+1];
+    return t[n][W];
 }
 int main(){
     int n;
