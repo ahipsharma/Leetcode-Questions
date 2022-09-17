@@ -32,4 +32,8 @@ int main(){
     for(int i = 0;i<n;i++)
         cin>>val[i];
     cout << Knapsack(wt, val, W, n);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e0cad02a4a8acc8c145c0ff7cf171ea7c5c3b531
